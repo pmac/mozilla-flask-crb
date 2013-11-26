@@ -29,14 +29,15 @@
           <nav id="nav-main" role="navigation">
             <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
             <ul id="nav-main-menu">
-              <li class="first"><a href="#">Page One</a></li>
-              <li><a href="#">Page Two</a></li>
-              <li><a href="#">Page Three</a></li>
-              <li class="last"><a href="#">Page Four</a></li>
+              <li class="first"><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="{{ url_for('about') }}">About</a></li>
+              <li><a href="{{ url_for('why_crb') }}">Why CRB?</a></li>
+              <li><a href="{{ url_for('members') }}">Members</a></li>
+              <li class="last"><a href="{{ url_for('certified_products') }}">Certified Products</a></li>
             </ul>
           </nav>
 
-          <h2><a href="http://www.mozilla.org"><img src="{{ url_for('static', filename='img/sandstone/header-mozilla-stone.png') }}" alt="mozilla"></a></h2>
+          <h2><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/sandstone/OWD-compliance-review-board_wordmark.png') }}" alt="mozilla"></a></h2>
 
           <!--
             Breadcrumbs are optional, if the hierarchy warrants it.
