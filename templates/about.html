@@ -1,4 +1,72 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <article class="main-column">
+
+      <h1>What is Sandstone</h1>
+      <p>Sandstone is our defined style and form for Web properties. Combining
+      set visual styles, UX elements, and a responsive grid system, it creates
+      a cohesive brand experience across all our websites. You can learn more
+      about it in the <a href="http://www.mozilla.org/styleguide/websites/sandstone/">Mozilla style guide</a>.</p>
+
+      <h2>Responsive grids</h2>
+      <p>The default grid system for Sandstone is 12 columns at a width of 940px,
+      where each column is 60px wide with 20px gutters. Those gutters are achieved
+      with 10px margins on the left and right of the columns so elements can span columns
+      and float next to each other in an endless variety of configurations.</p>
+
+      <p>The columns switch to 40px wide for smaller viewports, those between 760px
+      and 480px wide. For especially small viewports &ndash; namely smartphones or
+      other handheld mobile devices &ndash; the grid drops to 5 columns at 40px and
+      most content is allowed to stack vertically rather than float side by side. Bear
+      this in mind when you arrange your content so it can maintain a sensible flow in
+      both configurations.</p>
+
+      <h2>Headings</h2>
+      <p>The secondary heading above is an <code>h2</code> element, which may be used for any
+      form of important page-level heading. Primary titles, such as the page title or the title
+      of this article can be <code>h1</code> elements. In HTML5, each new section element in a document
+      establishes a new context with a new heading hierarchy, so it's perfectly acceptable to
+      have more than one <code>h1</code> on a single page, but there should generally be as few
+      as possible.</p>
+
+      <p>Use headings in the correct order to indicate hierarchy and the relative importance
+      of the content they introduce.</p>
+
+      <h3>Third-Level Heading</h3>
+      <p>The heading above is an <code>h3</code> element, which may be used for any form of
+      page-level heading which falls below the <code>h2</code> heading in a document hierarchy.</p>
+
+      <h4>Fourth-Level Heading</h4>
+      <p>For all headings below third-level, follow the guidelines listed above.
+      Only use lower heading levels when necessary.</p>
+
+      <h5>Fifth-Level Heading</h5>
+      <p>For all headings below third-level, follow the guidelines listed above.
+      Only use lower heading levels when necessary.</p>
+
+      <h6>Sixth-Level Heading</h6>
+      <p>For all headings below third-level, follow the guidelines listed above.
+      Only use lower heading levels when necessary.</p>
+
+    </article>
+
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Some pages may have optional sidebars to contain supplemental content or navigation.
+      Sidebars typically wrap under the main column in mobile viewports, and should always be
+      considered secondary to the main intent of the page. If a sidebar contains vital and
+      essential content, then perhaps that content shouldn't be in a sidebar.</p>
+
+      <nav>
+        <h4>Sidebar Navigation</h4>
+        <ul>
+          <li><a href="#">Page One</a></li>
+          <li><a href="#">Page Two</a></li>
+          <li><a href="#">Page Three</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+
 {% endblock content %}
