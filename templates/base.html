@@ -49,8 +49,10 @@
           with the id "main-feature". This might be a single heading (h1), an hgroup, a div, etc.
         -->
         <hgroup id="main-feature" class="center">
-          <h1 class="large">Mozilla Sandstone</h1>
-          <h2>A global style for Mozilla websites</h2>
+          {% block main_feature %}
+              <h1 class="large">Mozilla Sandstone</h1>
+              <h2>A global style for Mozilla websites</h2>
+          {% endblock %}
         </hgroup>
 
         <!--
