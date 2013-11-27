@@ -1,54 +1,43 @@
 {% extends "base.html" %}
 
+{% block main_feature %}
+{% endblock %}
+
 {% block content %}
     <article class="main-column">
+      <p>Why is a certification review board necessary?</p>
 
-      <h1>What is Sandstone</h1>
-      <p>Sandstone is our defined style and form for Web properties. Combining
-      set visual styles, UX elements, and a responsive grid system, it creates
-      a cohesive brand experience across all our websites. You can learn more
-      about it in the <a href="http://www.mozilla.org/styleguide/websites/sandstone/">Mozilla style guide</a>.</p>
+      <ul>
+        <li><strong>To reduce OS fragmentation.</strong> The CRB incentivizes participants to stick to a pre-defined set of APIs and performance experiences.</li>
+        <li><strong>To provide a faster time to market.</strong> Devices pre-qualified by the CRB will experience reduced certification time at carrier labs, enabling a quicker route to stores.</li>
+        <li><strong>To ensure performance uniformity.</strong> The CRB sets a minimum quality bar for consistent performance on devices running Boot2Gecko (B2G), and confirms that performance is similar to any other OS running on a similar device.</li>
+        <li><strong>To provide global independent API certification.</strong> The CRB establishes certification standards for ensuring API compliance of any B2G device tied to a specific OS version.</li>
+      </ul>
 
-      <h2>Responsive grids</h2>
-      <p>The default grid system for Sandstone is 12 columns at a width of 940px,
-      where each column is 60px wide with 20px gutters. Those gutters are achieved
-      with 10px margins on the left and right of the columns so elements can span columns
-      and float next to each other in an endless variety of configurations.</p>
+      <p>What are the benefits of certification?</p>
 
-      <p>The columns switch to 40px wide for smaller viewports, those between 760px
-      and 480px wide. For especially small viewports &ndash; namely smartphones or
-      other handheld mobile devices &ndash; the grid drops to 5 columns at 40px and
-      most content is allowed to stack vertically rather than float side by side. Bear
-      this in mind when you arrange your content so it can maintain a sensible flow in
-      both configurations.</p>
+      <p>For operators</p>
+      <ul>
+        <li>Uniform test and certification criteria for every B2G-based device in the ecosystem.</li>
+        <li>Shorter operator acceptance test cycle time means reduced duplication and cost, and enables focusing on testing key differentiators</li>
+        <li>Sets a minimum bar for expected user experience.</li>
+        <li>Ensures uniformity across devices, offering more choices for Operators.</li>
+      </ul>
 
-      <h2>Headings</h2>
-      <p>The secondary heading above is an <code>h2</code> element, which may be used for any
-      form of important page-level heading. Primary titles, such as the page title or the title
-      of this article can be <code>h1</code> elements. In HTML5, each new section element in a document
-      establishes a new context with a new heading hierarchy, so it's perfectly acceptable to
-      have more than one <code>h1</code> on a single page, but there should generally be as few
-      as possible.</p>
+      <p>For OEMs</p>
+      <ul>
+        <li>Reduces time and cost to qualify across operators and markets (test once, sell to many).</li>
+        <li>Device compliance to pre-set quality metrics &amp; APIs reduces certification time at operator labs.</li>
+        <li>OEMs can concentrate on product differentiations rather than investing on individual API compliance suites.</li>
+        <li>Reduce OS fragmentation and ensure devices with set of pre-defined APIs conforming to a specific Firefox OS version.</li>
+      </ul>
 
-      <p>Use headings in the correct order to indicate hierarchy and the relative importance
-      of the content they introduce.</p>
-
-      <h3>Third-Level Heading</h3>
-      <p>The heading above is an <code>h3</code> element, which may be used for any form of
-      page-level heading which falls below the <code>h2</code> heading in a document hierarchy.</p>
-
-      <h4>Fourth-Level Heading</h4>
-      <p>For all headings below third-level, follow the guidelines listed above.
-      Only use lower heading levels when necessary.</p>
-
-      <h5>Fifth-Level Heading</h5>
-      <p>For all headings below third-level, follow the guidelines listed above.
-      Only use lower heading levels when necessary.</p>
-
-      <h6>Sixth-Level Heading</h6>
-      <p>For all headings below third-level, follow the guidelines listed above.
-      Only use lower heading levels when necessary.</p>
-
+      <p>For users/developers</p>
+      <ul>
+        <li>Consistent experience of the full Web across devices and apps.</li>
+        <li>No concerns of fragmentation on certified devices - all APIs will work expected.</li>
+        <li>Minimum performance guarantee to enhance the device/apps experience.</li>
+      </ul>
     </article>
 
     <aside class="sidebar">
