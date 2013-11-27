@@ -1,7 +1,11 @@
 #!/usr/bin/env python
+import sys
+
 from flask import Flask, render_template
+from flask_frozen import Freezer
 
 app = Flask(__name__)
+freezer = Freezer(app)
 
 @app.route("/")
 def index():
@@ -23,6 +27,13 @@ def members():
 def certified_products():
     return render_template('certified_products.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 if __name__ == "__main__":
-    app.debug = True
-    app.run(port=8000)
+    if len(sys.argv) > 1 and sys.argv[1] == "build":
+        freezer.freeze()
+    else:
+        app.debug = True
+        app.run(port=8000)
