@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mozilla CRB | {% block title %}{% endblock title %}</title>
+    <title>Mozilla CRB | Certified Products</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/sandstone/sandstone.css') }}" media="all">
+    <link rel="stylesheet" href="../static/css/sandstone/sandstone.css" media="all">
 
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
 
     <!--[if lte IE 8]>
-    <script src="{{ url_for('static', filename='js/libs/html5shiv.js') }}"></script>
+    <script src="../static/js/libs/html5shiv.js"></script>
     <![endif]-->
 
   </head>
@@ -29,15 +29,15 @@
           <nav id="nav-main" role="navigation">
             <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
             <ul id="nav-main-menu">
-              <li class="first"><a href="{{ url_for('index') }}">Home</a></li>
-              <li><a href="{{ url_for('about') }}">About</a></li>
-              <li><a href="{{ url_for('why_crb') }}">Why CRB?</a></li>
-              <li><a href="{{ url_for('members') }}">Members</a></li>
-              <li class="last"><a href="{{ url_for('certified_products') }}">Certified Products</a></li>
+              <li class="first"><a href="../index.html">Home</a></li>
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="../why_crb/index.html">Why CRB?</a></li>
+              <li><a href="../members/index.html">Members</a></li>
+              <li class="last"><a href="index.html">Certified Products</a></li>
             </ul>
           </nav>
 
-          <h2><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/sandstone/OWD-compliance-review-board_wordmark.png') }}" alt="mozilla"></a></h2>
+          <h2><a href="../index.html"><img src="../static/img/sandstone/OWD-compliance-review-board_wordmark.png" alt="mozilla"></a></h2>
 
         </header>
 
@@ -49,10 +49,8 @@
           with the id "main-feature". This might be a single heading (h1), an hgroup, a div, etc.
         -->
         <hgroup id="main-feature" class="center">
-          {% block main_feature %}
-              <h1 class="large">Mozilla Sandstone</h1>
-              <h2>A global style for Mozilla websites</h2>
-          {% endblock %}
+          
+
         </hgroup>
 
         <!--
@@ -61,8 +59,32 @@
           semantically appropriate for the content.
         -->
         <div id="main-content">
-          {% block content %}
-          {% endblock content %}
+          
+    <article class="main-column">
+        <p>TBD</p>
+    </article>
+
+<!--
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Some pages may have optional sidebars to contain supplemental content or navigation.
+      Sidebars typically wrap under the main column in mobile viewports, and should always be
+      considered secondary to the main intent of the page. If a sidebar contains vital and
+      essential content, then perhaps that content shouldn't be in a sidebar.</p>
+
+      <nav>
+        <h4>Sidebar Navigation</h4>
+        <ul>
+          <li><a href="#">Page One</a></li>
+          <li><a href="#">Page Two</a></li>
+          <li><a href="#">Page Three</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+-->
+
+
         </div>
 
       </div><!-- close #wrapper -->
@@ -72,7 +94,7 @@
 
 <!--
           <div class="footer-logo">
-              <a href="https://www.mozilla.org"><img src="{{ url_for('static', filename='img/sandstone/footer-mozilla.png') }}" alt="mozilla"></a>
+              <a href="https://www.mozilla.org"><img src="../static/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
 
           <div class="footer-license">
@@ -100,9 +122,9 @@
 
     </div><!-- close #outer-wrapper -->
 
-    <script src="{{ url_for('static', filename='js/libs/jquery-1.7.1.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/site.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/nav-main-resp.js') }}"></script>
+    <script src="../static/js/libs/jquery-1.7.1.min.js"></script>
+    <script src="../static/js/site.js"></script>
+    <script src="../static/js/nav-main-resp.js"></script>
     <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js') }}"></script>
 
 

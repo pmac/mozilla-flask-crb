@@ -33,6 +33,7 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
+        app.config['FREEZER_RELATIVE_URLS'] = True
         freezer.freeze()
     else:
         app.debug = True
