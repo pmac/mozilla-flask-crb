@@ -16,7 +16,7 @@
 
   </head>
 
-  <body class="sky">
+  <body class="crb">
     <div id="outer-wrapper">
       <div id="wrapper">
 
@@ -26,32 +26,9 @@
             The number of links should be kept to a minimum, no more than 5 or 6.
             If you need more than 6 links in this navbar, you have bigger IA problems to focus on.
           -->
-          <nav id="nav-main" role="navigation">
-            <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
-            <ul id="nav-main-menu">
-              <li class="first"><a href="../index.html">Home</a></li>
-              <li><a href="../about/index.html">About</a></li>
-              <li><a href="index.html">Why CRB?</a></li>
-              <li><a href="../members/index.html">Members</a></li>
-              <li class="last"><a href="../certified-products/index.html">Certified Products</a></li>
-            </ul>
-          </nav>
-
           <h2><a href="../index.html"><img src="../static/img/sandstone/OWD-compliance-review-board_wordmark.png" alt="mozilla"></a></h2>
 
         </header>
-
-        <!--
-          The main feature of a page is usually the main title, but may also consists of a promotional
-          banners, introductory text, etc. However, this should not be the main content or "meat" of the
-          page, so it shouldn't contain a lot of text or a full article. Think of it as a masthead for
-          this specific page below the global masthead for the entire site. Use an appropriate element
-          with the id "main-feature". This might be a single heading (h1), an hgroup, a div, etc.
-        -->
-        <hgroup id="main-feature" class="center">
-          
-
-        </hgroup>
 
         <!--
           The real meat of the page should be wrapped in a container with the id "main-content". This
@@ -59,9 +36,22 @@
           semantically appropriate for the content.
         -->
         <div id="main-content">
+
+          <aside class="sidebar">
+            <nav>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="index.html">Why CRB?</a></li>
+                <li><a href="../members/index.html">Members</a></li>
+                <li><a href="../certified-products/index.html">Certified Products</a></li>
+              </ul>
+            </nav>
+          </aside>
+
           
     <article class="main-column">
-      <p>Why is a certification review board necessary?</p>
+      <h3>Why is a certification review board necessary?</h3>
 
       <ul>
         <li><strong>To reduce OS fragmentation.</strong> The CRB incentivizes participants to stick to a pre-defined set of APIs and performance experiences.</li>
@@ -70,9 +60,9 @@
         <li><strong>To provide global independent API certification.</strong> The CRB establishes certification standards for ensuring API compliance of any B2G device tied to a specific OS version.</li>
       </ul>
 
-      <p>What are the benefits of certification?</p>
+      <h3>What are the benefits of certification?</h3>
 
-      <p>For operators</p>
+      <h4>For operators</h4>
       <ul>
         <li>Uniform test and certification criteria for every B2G-based device in the ecosystem.</li>
         <li>Shorter operator acceptance test cycle time means reduced duplication and cost, and enables focusing on testing key differentiators</li>
@@ -80,7 +70,7 @@
         <li>Ensures uniformity across devices, offering more choices for Operators.</li>
       </ul>
 
-      <p>For OEMs</p>
+      <h4>For OEMs</h4>
       <ul>
         <li>Reduces time and cost to qualify across operators and markets (test once, sell to many).</li>
         <li>Device compliance to pre-set quality metrics &amp; APIs reduces certification time at operator labs.</li>
@@ -88,7 +78,7 @@
         <li>Reduce OS fragmentation and ensure devices with set of pre-defined APIs conforming to a specific Firefox OS version.</li>
       </ul>
 
-      <p>For users/developers</p>
+      <h4>For users/developers</h4>
       <ul>
         <li>Consistent experience of the full Web across devices and apps.</li>
         <li>No concerns of fragmentation on certified devices - all APIs will work expected.</li>
@@ -96,25 +86,7 @@
       </ul>
     </article>
 
-<!--
-    <aside class="sidebar">
-      <h3>Sidebar</h3>
-      <p>Some pages may have optional sidebars to contain supplemental content or navigation.
-      Sidebars typically wrap under the main column in mobile viewports, and should always be
-      considered secondary to the main intent of the page. If a sidebar contains vital and
-      essential content, then perhaps that content shouldn't be in a sidebar.</p>
 
-      <nav>
-        <h4>Sidebar Navigation</h4>
-        <ul>
-          <li><a href="#">Page One</a></li>
-          <li><a href="#">Page Two</a></li>
-          <li><a href="#">Page Three</a></li>
-        </ul>
-      </nav>
-
-    </aside>
--->
 
         </div>
 
@@ -123,7 +95,6 @@
       <footer id="colophon">
         <div class="row">
 
-<!--
           <div class="footer-logo">
               <a href="https://www.mozilla.org"><img src="../static/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
@@ -147,7 +118,6 @@
             <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
           </ul>
 
--->
         </div>
       </footer>
 

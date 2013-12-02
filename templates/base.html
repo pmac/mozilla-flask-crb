@@ -16,7 +16,7 @@
 
   </head>
 
-  <body class="sky">
+  <body class="crb">
     <div id="outer-wrapper">
       <div id="wrapper">
 
@@ -26,34 +26,9 @@
             The number of links should be kept to a minimum, no more than 5 or 6.
             If you need more than 6 links in this navbar, you have bigger IA problems to focus on.
           -->
-          <nav id="nav-main" role="navigation">
-            <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
-            <ul id="nav-main-menu">
-              <li class="first"><a href="{{ url_for('index') }}">Home</a></li>
-              <li><a href="{{ url_for('about') }}">About</a></li>
-              <li><a href="{{ url_for('why_crb') }}">Why CRB?</a></li>
-              <li><a href="{{ url_for('members') }}">Members</a></li>
-              <li class="last"><a href="{{ url_for('certified_products') }}">Certified Products</a></li>
-            </ul>
-          </nav>
-
           <h2><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/sandstone/OWD-compliance-review-board_wordmark.png') }}" alt="mozilla"></a></h2>
 
         </header>
-
-        <!--
-          The main feature of a page is usually the main title, but may also consists of a promotional
-          banners, introductory text, etc. However, this should not be the main content or "meat" of the
-          page, so it shouldn't contain a lot of text or a full article. Think of it as a masthead for
-          this specific page below the global masthead for the entire site. Use an appropriate element
-          with the id "main-feature". This might be a single heading (h1), an hgroup, a div, etc.
-        -->
-        <hgroup id="main-feature" class="center">
-          {% block main_feature %}
-              <h1 class="large">Mozilla Sandstone</h1>
-              <h2>A global style for Mozilla websites</h2>
-          {% endblock %}
-        </hgroup>
 
         <!--
           The real meat of the page should be wrapped in a container with the id "main-content". This
@@ -61,8 +36,22 @@
           semantically appropriate for the content.
         -->
         <div id="main-content">
+
+          <aside class="sidebar">
+            <nav>
+              <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('why_crb') }}">Why CRB?</a></li>
+                <li><a href="{{ url_for('members') }}">Members</a></li>
+                <li><a href="{{ url_for('certified_products') }}">Certified Products</a></li>
+              </ul>
+            </nav>
+          </aside>
+
           {% block content %}
           {% endblock content %}
+
         </div>
 
       </div><!-- close #wrapper -->
@@ -70,7 +59,6 @@
       <footer id="colophon">
         <div class="row">
 
-<!--
           <div class="footer-logo">
               <a href="https://www.mozilla.org"><img src="{{ url_for('static', filename='img/sandstone/footer-mozilla.png') }}" alt="mozilla"></a>
           </div>
@@ -94,7 +82,6 @@
             <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
           </ul>
 
--->
         </div>
       </footer>
 

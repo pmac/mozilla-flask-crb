@@ -68,6 +68,23 @@ a {
 
 }
 
+.crb {
+    #outer-wrapper {
+        background-color: #EEEEEE;
+        background-image: linear-gradient(#aeb9c2, #EEEEEE);
+        background-repeat: repeat-x;
+    }
+
+    a {
+        color: @linkSkyBlue;
+        &:hover,
+        &:active {
+            color: darken(@linkSkyBlue, 10%);
+        }
+    }
+
+}
+
 .space {
     color: #fff;
 
