@@ -138,19 +138,19 @@ a:active {
 }
 
 .crb #outer-wrapper {
-    background-color: #FFFFCC;
+    background-color: #EEE;
     background-image: -webkit-gradient(
         linear,
         left top,
         left bottom,
         color-stop(0, #CCFF99),
-        color-stop(1, #FFFFCC)
+        color-stop(1, #EEE)
     );
-    background-image: -o-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
-    background-image: -moz-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
-    background-image: -webkit-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
-    background-image: -ms-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
-    background-image: linear-gradient(to bottom, #CCFF99 0%, #FFFFCC 100%);
+    background-image: -o-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
+    background-image: -moz-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
+    background-image: -webkit-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
+    background-image: -ms-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
+    background-image: linear-gradient(to bottom, #CCFF99 0%, #EEE 100%);
     background-size: 100% 400px;
     background-repeat:no-repeat;
 }
@@ -442,6 +442,10 @@ input.focus {
 #main-content,
 #main-feature {
     padding-bottom: 48px;
+}
+
+#main-content {
+    min-height: 500px;
 }
 
 .main-column {
