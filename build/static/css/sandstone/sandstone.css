@@ -138,9 +138,18 @@ a:active {
 }
 
 .crb #outer-wrapper {
-    background-color: #EEEEEE;
-    background-image: linear-gradient(#a5c4de, #EEEEEE);
-    background-repeat: repeat-x;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A5C5DE),
+        color-stop(1, #EEEEEE)
+    );
+    background-image: -o-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-image: -moz-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-image: -webkit-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-image: -ms-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-image: linear-gradient(to bottom, #A5C5DE 0%, #EEEEEE 100%);
 }
 
 .crb a {
