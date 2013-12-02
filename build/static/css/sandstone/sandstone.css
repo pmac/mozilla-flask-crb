@@ -143,15 +143,15 @@ a:active {
         linear,
         left top,
         left bottom,
-        color-stop(0, #CCFF99),
+        color-stop(0, #959879),
         color-stop(1, #EEE)
     );
-    background-image: -o-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
-    background-image: -moz-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
-    background-image: -webkit-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
-    background-image: -ms-linear-gradient(bottom, #CCFF99 0%, #EEE 100%);
-    background-image: linear-gradient(to bottom, #CCFF99 0%, #EEE 100%);
-    background-size: 100% 400px;
+    background-image: -o-linear-gradient(bottom, #959879 0%, #EEE 100%);
+    background-image: -moz-linear-gradient(bottom, #959879 0%, #EEE 100%);
+    background-image: -webkit-linear-gradient(bottom, #959879 0%, #EEE 100%);
+    background-image: -ms-linear-gradient(bottom, #959879 0%, #EEE 100%);
+    background-image: linear-gradient(to bottom, #959879 0%, #EEE 100%);
+    background-size: 100% 250px;
     background-repeat:no-repeat;
 }
 
