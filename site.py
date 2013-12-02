@@ -7,25 +7,33 @@ from flask_frozen import Freezer
 app = Flask(__name__)
 freezer = Freezer(app)
 
+NAV = {
+    'members': 'Members',
+    'index': 'Home',
+    'why_crb': 'Why CRB?',
+    'about': 'About',
+    'certified_products': 'Certified Products'
+}
+
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('index.html', nav=NAV)
 
 @app.route("/about/")
 def about():
-    return render_template('about.html')
+    return render_template('about.html', nav=NAV)
 
 @app.route("/why_crb/")
 def why_crb():
-    return render_template('why_crb.html')
+    return render_template('why_crb.html', nav=NAV)
 
 @app.route("/members/")
 def members():
-    return render_template('members.html')
+    return render_template('members.html', nav=NAV)
 
 @app.route("/certified-products/")
 def certified_products():
-    return render_template('certified_products.html')
+    return render_template('certified_products.html', nav=NAV)
 
 @app.errorhandler(404)
 def page_not_found(e):

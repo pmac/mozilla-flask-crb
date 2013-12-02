@@ -40,11 +40,11 @@
           <aside class="sidebar">
             <nav>
               <ul>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('why_crb') }}">Why CRB?</a></li>
-                <li><a href="{{ url_for('members') }}">Members</a></li>
-                <li><a href="{{ url_for('certified_products') }}">Certified Products</a></li>
+                {% for link, text in nav.iteritems() %}
+                  <li>
+                    <b><a {% if link == request.endpoint %}id="active"{% endif %} href="{{ url_for(link) }}">{{ text }}</a></b>
+                  </li>
+                {% endfor %}
               </ul>
             </nav>
           </aside>

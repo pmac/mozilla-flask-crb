@@ -139,7 +139,7 @@ a:active {
 
 .crb #outer-wrapper {
     background-color: #EEEEEE;
-    background-image: linear-gradient(#aeb9c2, #EEEEEE);
+    background-image: linear-gradient(#a5c4de, #EEEEEE);
     background-repeat: repeat-x;
 }
 
@@ -434,13 +434,13 @@ input.focus {
 
 .main-column {
     float: right;
-    width: 700px; /* 9 column span */
+    width: 780px; /* 10 column span */
     margin: 0 10px;
 }
 
 .sidebar {
     float: left;
-    width: 220px; /* 3 column span */
+    width: 140px; /* 3 column span */
     margin: 0 10px;
 }
 
@@ -606,12 +606,17 @@ nav.menu-bar span:first-child a {
     list-style-type: none;
     border-bottom: 1px dotted #8A9691;
     margin: 0;
+    padding-bottom: 0px;
 }
 
 .sidebar nav a,
 .sidebar nav b {
     display: block;
-    padding: 8px 0;
+    padding: 3px 0;
+}
+
+.sidebar nav li a#active {
+    color: #3A8265;
 }
 
 .sidebar nav li b {
