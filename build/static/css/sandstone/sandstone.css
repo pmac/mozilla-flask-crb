@@ -227,22 +227,22 @@ h1,
 .huge h2,
 .large h2,
 .billboard h2 {
-    font-size: 48px;
+    font-size: 32px;
     letter-spacing: -2px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: -1px;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: -0.5px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: -0.25px;
 }
 
@@ -466,8 +466,8 @@ input.focus {
 }
 
 /* Header */
-#masthead h2 {
-    padding: 30px 0 20px;
+#masthead div {
+    padding: 30px 0 30px;
     margin: 0 15%;
 }
 
@@ -845,18 +845,18 @@ nav.menu-bar span:first-child a {
 
     h1,
     .large h2 {
-        font-size: 32px;
+        font-size: 28px;
         letter-spacing: -1px;
     }
 
     h2,
     .billboard h2 {
-        font-size: 28px;
+        font-size: 24px;
         letter-spacing: -0.5px;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 18px;
         letter-spacing: -0.25px;
     }
 
