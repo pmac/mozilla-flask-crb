@@ -37,7 +37,7 @@ def certified_products():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html'), 404
+    return render_template('404.html', nav=NAV), 404
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
