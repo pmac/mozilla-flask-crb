@@ -7,13 +7,13 @@ from flask_frozen import Freezer
 app = Flask(__name__)
 freezer = Freezer(app)
 
-NAV = {
-    'members': 'Members',
-    'index': 'Home',
-    'why_crb': 'Why CRB?',
-    'about': 'About',
-    'certified_products': 'Certified Products'
-}
+NAV = (
+    ('index', 'Home'),
+    ('about', 'About'),
+    ('why_crb', 'Why CRB?'),
+    ('members', 'Members'),
+    ('certified_products', 'Certified Products')
+    )
 
 @app.route("/")
 def index():

@@ -31,7 +31,7 @@
           <aside class="sidebar">
             <nav>
               <ul>
-                {% for link, text in nav.iteritems() %}
+                {% for link, text in nav %}
                   <li>
                     <b><a {% if link == request.endpoint %}id="active"{% endif %} href="{{ url_for(link) }}">{{ text }}</a></b>
                   </li>
