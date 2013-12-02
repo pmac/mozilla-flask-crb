@@ -21,13 +21,6 @@
       <div id="wrapper">
 
         <header id="masthead">
-          <!--
-            The main navigation is optional, for pages that need it.
-            The number of links should be kept to a minimum, no more than 5 or 6.
-            If you need more than 6 links in this navbar, you have bigger IA problems to focus on.
-          -->
-          <h2><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/sandstone/OWD-compliance-review-board_wordmark.png') }}" alt="mozilla"></a></h2>
-
         </header>
 
         <!--
@@ -36,9 +29,9 @@
           semantically appropriate for the content.
         -->
         <div id="main-content">
-
           <aside class="sidebar">
             <nav>
+              <h2><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/sandstone/OWD-compliance-review-board_wordmark.png') }}" alt="mozilla"></a></h2>
               <ul>
                 {% for link, text in nav.iteritems() %}
                   <li>
@@ -58,30 +51,7 @@
 
       <footer id="colophon">
         <div class="row">
-
-          <div class="footer-logo">
-              <a href="https://www.mozilla.org"><img src="{{ url_for('static', filename='img/sandstone/footer-mozilla.png') }}" alt="mozilla"></a>
-          </div>
-
-          <div class="footer-license">
-              <p>Portions of this content are ©1998–2013 by individual
-                mozilla.org contributors. Content available under
-                a <a href="https://www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>.</p>
-              <p><a href="https://www.mozilla.org/contribute">Contribute to this page</a></p>
-          </div>
-          <ul class="footer-nav">
-            <li><a href="https://www.mozilla.org/about/contact.html#map-mountain_view">Contact Us</a></li>
-            <li><a href="https://www.mozilla.org/privacy">Privacy Policy</a></li>
-            <li><a href="https://www.mozilla.org/about/legal.html">Legal Notices</a></li>
-            <li><a href="https://www.mozilla.org/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
-          </ul>
-
-          <ul class="footer-nav">
-            <li><a href="http://twitter.com/firefox">Twitter</a></li>
-            <li><a href="http://facebook.com/Firefox">Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
-          </ul>
-
+          <div class="footer-license">Open Web Device CRB 2013</div>
         </div>
       </footer>
 

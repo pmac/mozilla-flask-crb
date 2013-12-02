@@ -138,6 +138,7 @@ a:active {
 }
 
 .crb #outer-wrapper {
+    background-color: #EEEEEE;
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -150,6 +151,8 @@ a:active {
     background-image: -webkit-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
     background-image: -ms-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
     background-image: linear-gradient(to bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-size: 100% 400px;
+    background-repeat:no-repeat;
 }
 
 .crb a {
@@ -443,16 +446,20 @@ input.focus {
 
 .main-column {
     float: right;
-    width: 780px; /* 10 column span */
+    width: 700px; /* 19 column span */
     margin: 0 10px;
 }
 
 .sidebar {
     float: left;
-    width: 140px; /* 3 column span */
+    width: 220px; /* 3 column span */
     margin: 0 10px;
 }
 
+
+#masthead {
+    min-height: 30px;
+}
 
 /* Header */
 #masthead h2 {
