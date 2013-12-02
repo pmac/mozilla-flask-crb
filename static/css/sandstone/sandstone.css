@@ -138,30 +138,30 @@ a:active {
 }
 
 .crb #outer-wrapper {
-    background-color: #EEEEEE;
+    background-color: #FFFFCC;
     background-image: -webkit-gradient(
         linear,
         left top,
         left bottom,
-        color-stop(0, #A5C5DE),
-        color-stop(1, #EEEEEE)
+        color-stop(0, #CCFF99),
+        color-stop(1, #FFFFCC)
     );
-    background-image: -o-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
-    background-image: -moz-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
-    background-image: -webkit-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
-    background-image: -ms-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
-    background-image: linear-gradient(to bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-image: -o-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
+    background-image: -moz-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
+    background-image: -webkit-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
+    background-image: -ms-linear-gradient(bottom, #CCFF99 0%, #FFFFCC 100%);
+    background-image: linear-gradient(to bottom, #CCFF99 0%, #FFFFCC 100%);
     background-size: 100% 400px;
     background-repeat:no-repeat;
 }
 
 .crb a {
-    color: #395F7E;
+    color: #3A8265;
 }
 
 .crb a:hover,
 .crb a:active {
-    color: #3A8265;
+    color: #666633;
 }
 
 .space {
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, .huge, .large {
     display: block;
     margin: 0 0 12px 0;
     text-shadow: 0 1px 0 rgba(255,255,255,0.75);
-    color: #484848;
+    color: #333333;
 }
 
 .huge,
@@ -620,7 +620,7 @@ nav.menu-bar span:first-child a {
 
 .sidebar nav li {
     list-style-type: none;
-    border-bottom: 1px dotted #8A9691;
+    border-bottom: 1px dotted #999999;
     margin: 0;
     padding-bottom: 0px;
 }
@@ -632,7 +632,7 @@ nav.menu-bar span:first-child a {
 }
 
 .sidebar nav li a#active {
-    color: #3A8265;
+    color: #666633;
 }
 
 .sidebar nav li b {
@@ -649,6 +649,7 @@ nav.menu-bar span:first-child a {
     background: #fff;
     width: 100%;
     margin: 1em 0 0;
+    border-top: 1px solid #666600;
 }
 
 #colophon .row {
@@ -676,7 +677,8 @@ nav.menu-bar span:first-child a {
 }
 
 #colophon .footer-license {
-    width: 220px;
+    width: 100%;
+    text-align: center;
 }
 
 #colophon  .footer-nav {
@@ -743,7 +745,6 @@ nav.menu-bar span:first-child a {
 
     .sidebar {
         width: 160px; /* 3 column span */
-        margin-left: 70px; /* 1 column offset */
     }
 
     #colophon .row {
@@ -755,7 +756,8 @@ nav.menu-bar span:first-child a {
     }
 
     #colophon .footer-license {
-        width: 160px;
+        text-align: center;
+        width: 100%;
     }
 
     #colophon .footer-nav {
