@@ -138,6 +138,7 @@ a:active {
 }
 
 .crb #outer-wrapper {
+    background-color: #EEEEEE;
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -150,6 +151,8 @@ a:active {
     background-image: -webkit-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
     background-image: -ms-linear-gradient(bottom, #A5C5DE 0%, #EEEEEE 100%);
     background-image: linear-gradient(to bottom, #A5C5DE 0%, #EEEEEE 100%);
+    background-size: 100% 400px;
+    background-repeat:no-repeat;
 }
 
 .crb a {
