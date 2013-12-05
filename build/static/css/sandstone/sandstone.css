@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, .huge, .large {
     line-height: 1;
     font-weight: normal;
     display: block;
-    margin: 0 0 12px 0;
+    margin: 0 0 20px 0;
     text-shadow: 0 1px 0 rgba(255,255,255,0.75);
     color: #333333;
 }
