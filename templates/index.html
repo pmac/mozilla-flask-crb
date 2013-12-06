@@ -7,9 +7,8 @@
     <h1>Welcome to the Open Web Device CRB</h1>
 
     <p>The Open Web Device Compliance Review Board is an independent, not-for-profit
-       organization formed to define and evolve the process of encouraging API
-       compatibility and competitive performance for devices running the Boot2Gecko
-       operating system.</p>
+      organization formed to define and evolve the process of encouraging API
+      compatibility and competitive performance for devices running the B2G operating system.</p>
 
     <p>We are a partnership between operators, device OEMs, silicon vendors and
     test solution providers to define and evolve a process that encourages
@@ -23,6 +22,29 @@
         <li>Leverage existing industry organizations for easier deployment of CRB</li>
     </ul>
 
+    <h2>Contact</h2>
+    <noscript><p><em>[You must enable Javascript to see email addresses.</em></p></noscript>
+    <h3>Partnership inquiries:</h3>
+    <p>Email: Sandip Kamat [<a id="sandip"></a>]</p>
+
+
+    <h3>Media inquiries</h3>
+    <p>Email: Rachel Shaffer [<a id="rachel"></a>]</p>
+
   </article>
 
 {% endblock content %}
+
+{% block extra_js %}
+    <script src="{{ url_for('static', filename='js/libs/jquery.emailaddressmunging.js') }}"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('#sandip').attr('href', $.rotate13('znvygb:fxnzng@zbmvyyn.pbz')).text(
+          $.rotate13('fxnzng@zbmvyyn.pbz')
+        );
+        $('#rachel').attr('href', $.rotate13('znvygb:enpury@nyyvfbace.pbz')).text(
+          $.rotate13('enpury@nyyvfbace.pbz')
+        );
+      });
+    </script>
+{% endblock extra_js %}
